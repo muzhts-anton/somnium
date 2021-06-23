@@ -1,0 +1,14 @@
+User interface:
+
+- Create new BOOK
+- Create new CHAPTER
+
+- Delete BOOK
+- Delete CHAPTER
+
+- Open BOOK
+- Open Chapter
+
+- Add-format-delete COMMENT
+- Add-format-delete a structure to LEGEND
+
