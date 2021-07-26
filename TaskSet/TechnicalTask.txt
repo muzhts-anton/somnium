@@ -1,14 +1,32 @@
-User interface:
+to realize (main):
 
-- Create new BOOK
-- Create new CHAPTER
+- CREATE
+   > new BOOK
+   > new CHAPTER
+   > new SUBSECTION
+   > new LEGEND
+   > new COMMENT
 
-- Delete BOOK
-- Delete CHAPTER
+- OPEN & WORK WITH & RENAME
+   > BOOK -> CHAPTER -> SUBSECTION
+   > LEGEND
+   > COMMENT
 
-- Open BOOK
-- Open Chapter
+- DELETE
+   > BOOK
+   > CHAPTER
+   > SUBSECTION
+   > LEGEND
+   > COMMENT
 
-- Add-format-delete COMMENT
-- Add-format-delete a structure to LEGEND
+to realize (extra):
+
+- FIND
+   > word/phrase in text
+   > BOOK
+   > CHAPTER
+   > SUBSECTION
+
+- EDIT MODE
+   > Autosave stops until user's instructions are given
 
