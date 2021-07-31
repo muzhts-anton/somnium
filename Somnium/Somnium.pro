@@ -11,6 +11,7 @@ CONFIG += c++11
 SOURCES += \
     editor/editor.cpp \
     main.cpp \
+    regulations/workflow.cpp \
     repositories/repobuttons.cpp \
     repositories/repoplacement.cpp \
     repositories/reposcroll.cpp \

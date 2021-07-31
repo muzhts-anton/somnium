@@ -2,6 +2,7 @@
 #define DATAFILE_H
 
 #include "../../regulations/systemreg.h"
+#include "../../regulations/workflow.h"
 #include "../fileutils/fileutils.h"
 
 
@@ -11,7 +12,7 @@ public:
     ~DataFile();
 
 protected:
-    Level getLevel();
+    workflow::DataLevel getLevel();
     bool defineName(systemregulation::FileType);
 
 private:

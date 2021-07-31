@@ -5,7 +5,7 @@
 class RepoPlacement
 {
 public:
-    RepoPlacement(unsigned short, unsigned short);
+    RepoPlacement(unsigned short row, unsigned short column);
 
     RepoPlacement &operator++();
 

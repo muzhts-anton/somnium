@@ -36,15 +36,15 @@ bool DataFile::defineName(systemregulation::FileType fileType)
 
 
     switch(this->getLevel()) {
-    case Level::IN_BOOK:
+    case workflow::DataLevel::IN_BOOK:
         _name = systemregulation::dirName.total.value(fileType);
         break;
 
-    case Level::IN_CHAPTER:
+    case workflow::DataLevel::IN_CHAPTER:
         _name = systemregulation::dirName.sectional.value(fileType);
         break;
 
-    case Level::IN_SUBSECTION:
+    case workflow::DataLevel::IN_SUBSECTION:
         _name = systemregulation::dirName.subsectional.value(fileType);
         break;
 
@@ -56,15 +56,15 @@ bool DataFile::defineName(systemregulation::FileType fileType)
     return isError;
 }
 
-Level DataFile::getLevel() {
+workflow::DataLevel DataFile::getLevel() {
     if(_subsectionNum != -1)
-        return Level::IN_SUBSECTION;
+        return workflow::DataLevel::IN_SUBSECTION;
     if(_chapterNum != -1)
-        return Level::IN_CHAPTER;
+        return workflow::DataLevel::IN_CHAPTER;
     if(_bookNum != -1)
-        return Level::IN_BOOK;
+        return workflow::DataLevel::IN_BOOK;
 
-    return Level::IN_ROOT;
+    return workflow::DataLevel::IN_ROOT;
 }
 
 DataFile::~DataFile()

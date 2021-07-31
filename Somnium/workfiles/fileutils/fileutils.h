@@ -6,14 +6,6 @@
 #include <QMap>
 
 
-enum class Level {
-    IN_ROOT = -1,
-    IN_BOOK,
-    IN_CHAPTER,
-    IN_SUBSECTION,
-};
-
-
 namespace commutils {
     enum class CommType {  // add all the types (in QMap in .cpp too)
         ERROR = -1,

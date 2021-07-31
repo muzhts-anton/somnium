@@ -57,6 +57,9 @@ protected:
     void deleteNode(DataTree *node = nullptr);
     void setParent(DataTree * const parent = nullptr);
 
+private slots:
+    void noteCreated(...);  // TODO(Tony): implement and connect it
+
 private:
     QString _rootPath;
 
@@ -68,11 +71,5 @@ private:
 
     QVariant _levelfiles;
 };
-
-/*
-MyCustomStruct c;
-if (v.canConvert<MyCustomStruct>())
-    c = v.value<MyCustomStruct>();
-*/
 
 #endif // SYSTEMTREE_H

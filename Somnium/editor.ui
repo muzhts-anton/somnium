@@ -122,23 +122,6 @@
         <widget class="QWidget" name="repoWorkingPage">
          <layout class="QVBoxLayout" name="verticalLayout_3">
           <item>
-           <widget class="RepoScroll" name="repoScroll">
-            <property name="widgetResizable">
-             <bool>true</bool>
-            </property>
-            <widget class="QWidget" name="scrollAreaWidgetContents">
-             <property name="geometry">
-              <rect>
-               <x>0</x>
-               <y>0</y>
-               <width>569</width>
-               <height>210</height>
-              </rect>
-             </property>
-            </widget>
-           </widget>
-          </item>
-          <item>
            <widget class="QTextBrowser" name="textBrowser"/>
           </item>
          </layout>
@@ -168,14 +151,6 @@
    </layout>
   </widget>
  </widget>
- <customwidgets>
-  <customwidget>
-   <class>RepoScroll</class>
-   <extends>QScrollArea</extends>
-   <header>reposcroll.h</header>
-   <container>1</container>
-  </customwidget>
- </customwidgets>
  <resources/>
  <connections/>
 </ui>

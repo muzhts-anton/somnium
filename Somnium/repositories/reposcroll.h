@@ -3,7 +3,8 @@
 
 #include <QScrollArea>
 
-#include "../systemtree/systemtree.h"
+#include "../regulations/systemreg.h"
+#include "../regulations/workflow.h"
 #include "repobuttons.h"
 
 
@@ -11,14 +12,20 @@ class RepoScroll : public QScrollArea
 {
     Q_OBJECT
 public:
-    RepoScroll(QWidget *parent);
-
-    void print(QList<RepoButtons *>);
-
+    RepoScroll(QWidget *parent, const QString path = systemregulation::dirName.folderSig.value(systemregulation::FolderType::ROOT));
     ~RepoScroll();
 
+signals:
+    void repoChosen(ssize_t numSubsection);
+
 private slots:
-    void renew(size_t numDir);
+    void renew(workflow::DataLevel toLevel);
+
+
+private:
+    RepoButtons *_repos;
+
+    workflow::DataLevel _newLevel;
 };
 
 #endif // REPOSCROLL_H
